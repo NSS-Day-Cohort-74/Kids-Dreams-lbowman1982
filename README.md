@@ -35,10 +35,16 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   
+   > main.js is responsible for executing the code that is displayed on the DOM, the function Kids() must be invoked in main for the list of child names and the state stored in the dataset to be available to the click event listener located in the kids.js module in which once the kids() code runs this event listener can target the state in the dataset and display the information specified in the window alert. 
+
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   
+   > to pass into the parameters the object kid and the array celebrities as an argument, allowing the function to have access to those. 
+
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   
+   >using the method .alert to display the state stored in the dataset, only if the condition is met, the value of that state will appear in a window.  This state is targeted by passing in the argument of the interpolated sport property in which the value of that state is stored in the dataset element data-sport 
+
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > the main module first imports the pairings, celebrities and kids.  Then the HTML is represented with the interpolated, above functions that represent the kids names and celebrities names list and the pairings list which is stored as state in order to allow the click events to display the correct information. 
